@@ -26,7 +26,7 @@ export const MOCK_SCHEDULE: ScheduleItem[] = [
     time: "10:30",
     title: "토크콘서트 '생활인의 삶'",
     description: "강연자: 이호선 교수\n생활인들의 진솔한 이야기를 듣는 소통의 시간",
-    image: "http://www.stargs.co.kr/upload_file/T_PRODUCT/20250708_133518.png",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400",
   },
   {
     id: "3",
