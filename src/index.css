@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FFD700;
+  --color-primary-foreground: #000000;
+  --color-background: #000000;
+  --color-muted: #1A1A1A;
+  --color-muted-foreground: #A1A1AA;
+  
+  --font-sans: "Inter", "Pretendard", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-white antialiased;
+  }
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #FFD700 0%, #B8860B 100%);
+}
+
+.text-gold {
+  @apply text-primary;
+}
+
+.border-gold {
+  @apply border-primary;
+}
