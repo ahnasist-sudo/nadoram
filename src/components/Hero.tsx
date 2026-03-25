@@ -10,7 +10,7 @@ interface HeroProps {
 
 export default function Hero({ title, subtitle, date, time }: HeroProps) {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-20">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-radial-[at_50%_50%] from-primary/10 to-transparent opacity-50" />
       
@@ -20,6 +20,14 @@ export default function Hero({ title, subtitle, date, time }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
+          <div className="mb-12 max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/10 max-h-[40vh]">
+            <img 
+              src="http://ajwelfare.or.kr/bbs/view_image.php?bo_table=b711&fn=2039857300_XW1qHbhZ_63e1bf4725ff8368acb6c49a1223b4f32b6c2d07.jpg" 
+              alt="애중복지재단 전경" 
+              className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
+          </div>
           <span className="text-primary font-medium tracking-[0.3em] uppercase mb-4 block">
             Invitation
           </span>
