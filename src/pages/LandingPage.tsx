@@ -21,7 +21,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title={`${settings.title} | 1982 애중복지재단`}
+        title={`${settings.title} | 애중복지재단`}
         description={settings.subtitle}
       />
       

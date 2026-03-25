@@ -47,7 +47,7 @@ export default function Hero({ title, subtitle, date, time }: HeroProps) {
           </div>
           <div className="flex items-center gap-3">
             <MapPin className="text-primary w-6 h-6" />
-            <span className="text-lg font-medium">1982 애중복지재단</span>
+            <span className="text-lg font-medium">애중복지재단</span>
           </div>
         </motion.div>
 

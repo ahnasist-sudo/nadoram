@@ -2,13 +2,13 @@ import { ScheduleItem, SiteSettings } from "../types";
 
 export const MOCK_SITE_SETTINGS: SiteSettings = {
   title: "나도람 축제",
-  subtitle: "사회복지법인 1982 애중복지재단이 함께하는 따뜻한 동행",
+  subtitle: "사회복지법인 애중복지재단이 함께하는 따뜻한 동행",
   date: "2026년 5월 13일 (수)",
-  location: "1982 애중복지재단",
+  location: "애중복지재단",
   locationDetail: "전남 무안군 삼향읍 유교길 101",
   primaryColor: "#FFD700",
   heroImage: "https://picsum.photos/seed/festival/1920/1080",
-  aboutText: "나도람 축제는 1982 애중복지재단 생활인들과 지역사회가 함께 어우러지는 화합의 장입니다. '나도람'은 '나누는 사람'의 줄임말로, 서로의 마음을 나누고 함께 성장하는 시간을 의미합니다.",
+  aboutText: "나도람 축제는 애중복지재단 생활인들과 지역사회가 함께 어우러지는 화합의 장입니다. '나도람'은 '나누는 사람'의 줄임말로, 서로의 마음을 나누고 함께 성장하는 시간을 의미합니다.",
   phone: "061-280-6506",
   email: "aj1982@naver.com",
   donationAccount: "(농축협) 애중복지재단 351-0459-7217-63",
@@ -26,7 +26,7 @@ export const MOCK_SCHEDULE: ScheduleItem[] = [
     time: "10:30",
     title: "토크콘서트 '생활인의 삶'",
     description: "강연자: 이호선 교수\n생활인들의 진솔한 이야기를 듣는 소통의 시간",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400",
+    image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800&h=800",
   },
   {
     id: "3",

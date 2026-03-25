@@ -7,7 +7,6 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
             <h3 className="text-xl font-bold text-primary mb-2">사회복지법인 애중복지재단</h3>
-            <p className="text-sm text-muted-foreground">1982 애중복지재단</p>
           </div>
 
           <div className="flex gap-6">
