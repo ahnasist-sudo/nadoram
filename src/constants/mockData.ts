@@ -38,7 +38,8 @@ export const MOCK_SCHEDULE: ScheduleItem[] = [
     id: "4",
     time: "13:00",
     title: "축하공연",
-    description: "다양한 예술가들의 화려한 무대",
+    description: "가온누리봉사단의 신나는 공연",
+    image: "https://www.visionsungil.co.kr/user/saveDir/board/www12/876_1765714382_1.jpg",
   },
   {
     id: "5",
