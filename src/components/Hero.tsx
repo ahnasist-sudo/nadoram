@@ -22,7 +22,7 @@ export default function Hero({ title, subtitle, date, time }: HeroProps) {
         >
           <div className="mb-12 max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/10 max-h-[40vh]">
             <img 
-              src="http://ajwelfare.or.kr/bbs/view_image.php?bo_table=b711&fn=2039857300_M5rqEj78_6d296ceb3e34416ade783d0c5ffdc4165fd30526.jpg" 
+              src="https://www.google.com/search?q=%EC%95%A0%EC%A4%91%EB%B3%B5%EC%A7%80%EC%9E%AC%EB%8B%A8&sca_esv=4b9c4fb793c57767&udm=2&biw=1239&bih=639&sxsrf=ANbL-n7mp2XnaPP-Z9h68pg_7RNfeF-CIg%3A1774408394309&ei=ylLDafbEEpnE1e8Pu96VwAE&ved=0ahUKEwj20Z2wirqTAxUZYvUHHTtvBRgQ4dUDCBI&uact=5&oq=%EC%95%A0%EC%A4%91%EB%B3%B5%EC%A7%80%EC%9E%AC%EB%8B%A8&gs_lp=Egtnd3Mtd2l6LWltZyIS7JWg7KSR67O17KeA7J6s64uoSL4eUOEFWN8dcAt4AJABAZgBhwGgAdwPqgEEMC4xOLgBA8gBAPgBAZgCEKACrweoAgjCAgUQABiABMICBhAAGAgYHsICCxAAGIAEGLEDGIMBwgIHEAAYgAQYCsICCBAAGIAEGLEDwgIEEAAYA8ICChAjGMkCGOoCGCeYAxOIBgGSBwM5LjegB9YssgcDMC43uAfNBsIHBjItNS4xMcgHlwGACAE&sclient=gws-wiz-img#sv=CAMSVhoyKhBlLUtpZS1kRW5jRlJySmxNMg5LaWUtZEVuY0ZSckpsTToOOGFCajZIczhYRkMwSk0gBCocCgZtb3NhaWMSEGUtS2llLWRFbmNGUnJKbE0YADABGAcgsrqrtwRKCBABGAEgASgB" 
               alt="애중복지재단 전경" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
