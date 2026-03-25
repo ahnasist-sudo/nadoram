@@ -22,7 +22,7 @@ export default function Hero({ title, subtitle, date, time }: HeroProps) {
         >
           <div className="mb-12 max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/10 max-h-[40vh]">
             <img 
-              src="http://ajwelfare.or.kr/bbs/view_image.php?bo_table=b711&fn=2039857300_XW1qHbhZ_63e1bf4725ff8368acb6c49a1223b4f32b6c2d07.jpg" 
+              src="http://ajwelfare.or.kr/bbs/view_image.php?bo_table=b711&fn=2039857300_M5rqEj78_6d296ceb3e34416ade783d0c5ffdc4165fd30526.jpg" 
               alt="애중복지재단 전경" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
