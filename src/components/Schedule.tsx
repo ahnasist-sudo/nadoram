@@ -1,11 +1,15 @@
-import { motion } from "motion/react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import { ScheduleItem } from "../types";
+import { X, ZoomIn } from "lucide-react";
 
 interface ScheduleProps {
   items: ScheduleItem[];
 }
 
 export default function Schedule({ items }: ScheduleProps) {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section id="schedule" className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
@@ -50,9 +54,12 @@ export default function Schedule({ items }: ScheduleProps) {
                       initial={{ opacity: 0, scale: 0.95 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.8, ease: "easeOut" }}
-                      className="flex-shrink-0 order-1 md:order-2 w-full md:w-64 aspect-video md:aspect-square rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative group"
+                      className="flex-shrink-0 order-1 md:order-2 w-full md:w-64 aspect-video md:aspect-square rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative group cursor-pointer"
+                      onClick={() => setSelectedImage(item.image || null)}
                     >
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <ZoomIn className="text-white w-8 h-8 transform scale-0 group-hover:scale-100 transition-transform duration-300" />
+                      </div>
                       <img 
                         src={item.image} 
                         alt={item.title} 
@@ -67,6 +74,40 @@ export default function Schedule({ items }: ScheduleProps) {
           ))}
         </div>
       </div>
+
+      {/* Image Preview Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4 md:p-10"
+            onClick={() => setSelectedImage(null)}
+          >
+            <motion.button
+              className="absolute top-6 right-6 text-white/70 hover:text-white p-2 bg-white/10 rounded-full backdrop-blur-md transition-colors"
+              onClick={() => setSelectedImage(null)}
+            >
+              <X className="w-8 h-8" />
+            </motion.button>
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="relative max-w-5xl w-full h-full flex items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={selectedImage}
+                alt="Preview"
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

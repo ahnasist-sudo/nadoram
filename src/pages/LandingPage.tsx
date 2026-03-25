@@ -41,6 +41,24 @@ export default function LandingPage() {
 
       <About text={settings.aboutText} />
       
+      {/* Image Preview Section for the Talk Concert */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">행사 이미지 미리보기</h2>
+            <p className="text-muted-foreground">토크콘서트 '생활인의 삶'의 공식 이미지입니다.</p>
+          </div>
+          <div className="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+            <img 
+              src="https://drive.google.com/uc?export=view&id=1onwGqhDzZWI7fQi_sXnYnCNu3Xzbh0kZ" 
+              alt="Talk Concert Preview" 
+              className="w-full h-auto object-cover"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+        </div>
+      </section>
+      
       <Schedule items={schedule} />
       
       <section className="py-24 bg-black">
