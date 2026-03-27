@@ -37,6 +37,7 @@ export default function LandingPage() {
         subtitle={settings.subtitle}
         date={settings.date}
         time="오전 10:00"
+        image={settings.heroImage}
       />
 
       <About text={settings.aboutText} />
