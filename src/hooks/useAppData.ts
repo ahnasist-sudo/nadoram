@@ -6,24 +6,17 @@ const SETTINGS_KEY = "aejung_festival_settings";
 const SCHEDULE_KEY = "aejung_festival_schedule";
 
 export function useAppData() {
-  const [settings, setSettings] = useState<SiteSettings>(() => {
-    const saved = localStorage.getItem(SETTINGS_KEY);
-    return saved ? JSON.parse(saved) : MOCK_SITE_SETTINGS;
-  });
-
-  const [schedule, setSchedule] = useState<ScheduleItem[]>(() => {
-    const saved = localStorage.getItem(SCHEDULE_KEY);
-    return saved ? JSON.parse(saved) : MOCK_SCHEDULE;
-  });
+  const [settings, setSettings] = useState<SiteSettings>(MOCK_SITE_SETTINGS);
+  const [schedule, setSchedule] = useState<ScheduleItem[]>(MOCK_SCHEDULE);
 
   const updateSettings = (newSettings: SiteSettings) => {
     setSettings(newSettings);
-    localStorage.setItem(SETTINGS_KEY, JSON.stringify(newSettings));
+    // localStorage.setItem(SETTINGS_KEY, JSON.stringify(newSettings));
   };
 
   const updateSchedule = (newSchedule: ScheduleItem[]) => {
     setSchedule(newSchedule);
-    localStorage.setItem(SCHEDULE_KEY, JSON.stringify(newSchedule));
+    // localStorage.setItem(SCHEDULE_KEY, JSON.stringify(newSchedule));
   };
 
   return {
