@@ -8,7 +8,7 @@ export const MOCK_SITE_SETTINGS: SiteSettings = {
   locationDetail: "전남 무안군 삼향읍 유교길 101",
   primaryColor: "#FFD700",
   heroImage: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=1920&h=1080",
-  aboutText: "나도람 축제는 애중복지재단 생활인들과 지역사회가 함께 어우러지는 화합의 장입니다. '나도람'은 '나누는 사람'의 줄임말로, 서로의 마음을 나누고 함께 성장하는 시간을 의미합니다.",
+  aboutText: "나도람 축제는 애중복지재단 생활인들과 지역사회가 함께 어우러지는 화합의 장입니다. '나도람'은 '나눠주고 도와주는 사람들'의 줄임말로, 서로의 마음을 나누고 함께 성장하는 시간을 의미합니다.",
   phone: "061-280-6506",
   email: "aj1982@naver.com",
   donationAccount: "(농축협) 애중복지재단 351-0459-7217-63",
