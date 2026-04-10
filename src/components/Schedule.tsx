@@ -7,7 +7,7 @@ interface ScheduleProps {
 
 export default function Schedule({ items }: ScheduleProps) {
   return (
-    <section id="schedule" className="py-24 bg-muted/30">
+    <section id="schedule" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">행사 일정</h2>
@@ -34,7 +34,7 @@ export default function Schedule({ items }: ScheduleProps) {
               </div>
 
               <div className="flex-grow pt-4">
-                <h3 className="text-2xl font-bold mb-2 text-primary tracking-tight">
+                <h3 className="text-2xl font-bold mb-2 text-[#8b7355] tracking-tight">
                   {item.title}
                 </h3>
                 <div className="flex flex-col md:flex-row gap-8 items-start">
@@ -50,13 +50,13 @@ export default function Schedule({ items }: ScheduleProps) {
                       initial={{ opacity: 0, scale: 0.95 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.8, ease: "easeOut" }}
-                      className="flex-shrink-0 order-1 md:order-2 w-full md:w-64 aspect-video md:aspect-square rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative group"
+                      className="flex-shrink-0 order-1 md:order-2 w-full md:w-80 aspect-[4/3] md:aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative group"
                     >
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <img 
                         src={item.image} 
                         alt={item.title} 
-                        className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                        className="w-full h-full object-cover object-top transform transition-transform duration-700 group-hover:scale-105"
                         referrerPolicy="no-referrer"
                       />
                     </motion.div>

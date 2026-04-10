@@ -2,11 +2,11 @@ import { Facebook, Instagram, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="py-12 border-t border-white/10 bg-black">
+    <footer className="py-12 border-t border-primary/10 bg-background">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
-            <h3 className="text-xl font-bold text-primary mb-2">사회복지법인 애중복지재단</h3>
+            <h3 className="text-xl font-bold text-[#ffce00] mb-2">사회복지법인 애중복지재단</h3>
           </div>
 
           <div className="flex gap-6">

@@ -80,7 +80,7 @@ export default function Location({ address, detail, phone, email, donationAccoun
               href={`https://map.naver.com/v5/search/${encodeURIComponent(detail)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-12 block w-full py-4 bg-primary text-black font-bold rounded-xl hover:bg-primary/90 transition-colors text-center"
+              className="mt-12 block w-full py-4 bg-[#ffce00] text-black font-bold rounded-xl hover:opacity-90 transition-opacity text-center"
             >
               네이버 지도로 보기
             </a>

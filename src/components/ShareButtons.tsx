@@ -13,9 +13,9 @@ export default function ShareButtons() {
     <div className="flex flex-wrap justify-center gap-4 mt-12">
       <button 
         onClick={copyLink}
-        className="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-all"
+        className="flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/20 rounded-full hover:bg-primary/20 transition-all text-primary font-medium"
       >
-        <LinkIcon size={18} className="text-primary" />
+        <LinkIcon size={18} />
         <span>링크 복사</span>
       </button>
     </div>

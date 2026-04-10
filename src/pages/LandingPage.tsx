@@ -7,6 +7,7 @@ import Location from "../components/Location";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 import ShareButtons from "../components/ShareButtons";
+import ConfettiScroll from "../components/ConfettiScroll";
 import { useAppData } from "../hooks/useAppData";
 
 export default function LandingPage() {
@@ -20,6 +21,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen">
+      <ConfettiScroll />
       <SEO 
         title={`${settings.title} | 애중복지재단`}
         description={settings.subtitle}
@@ -44,9 +46,9 @@ export default function LandingPage() {
       
       <Schedule items={schedule} />
       
-      <section className="py-24 bg-black">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-6 text-center">
-          <h3 className="text-2xl font-bold mb-8">이 소식을 공유해보세요</h3>
+          <h3 className="text-2xl font-bold mb-8 text-[#2D2D2D]">이 소식을 공유해보세요</h3>
           <ShareButtons />
         </div>
       </section>
